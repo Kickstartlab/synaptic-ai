@@ -6,26 +6,33 @@ module.exports = {
     colors: {
       seagreen: {
         "50": "#EBF5FF",
-        "100": "#03E6B6",
-        "200": "#00CEEA",
+        "100": "#CDE4F9",
       },
-      black: {
-        "50": "#666",
-        "100": "#222",
-        "900": "#181F2B",
+      blue: {
+        "50": "#2128BD",
+        "100": "#130F49",
       },
       white: {
         "100": "#fff",
         "50": "#f5f5f5"
       },
-      pink: {
-        "100": "#FFE7DB",
-        "200": "#FA7436"
+      purple: {
+        "50": "#9EC5FF",
+        "100": "#4F86FF",
       },
+       pink: {
+        "50": "#FEDDCF",
+        "100": "#FECFF6",
+        "200": "#FFEEAB",
+      },
+       gray: {
+        "100": "#1A1A1B",
+      },
+      
     },
     fontFamily: {
-      'volkhov': ["'Volkhov', serif;"],
-      'poppins': ["'Poppins', sans-serif;"],
+      'spartan': ["'League Spartan', sans-serif;"],
+      'work': ["'Work Sans', sans-serif;"],
     }
   },
   plugins: [],

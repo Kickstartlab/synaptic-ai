@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import logo from '../assets/logo.png';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 
@@ -11,28 +11,29 @@ export default function Menu() {
   return (
 
     <header>
-      <div className="lg:flex hidden items-center justify-between font-poppins text-black-100 h-20">
+      <div className="lg:flex hidden items-center justify-between font-work h-20">
         <a href="/" className="logo">
           <img src={logo} alt="Logo" />
         </a>
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
-            <li><Link to="/" className="text-zinc-100">Home</Link></li>
-            <li><Link to="/about" className="hover:text-seagreen-100 cursor-pointer">About</Link></li>
-            <li><Link to="/destination" className="hover:text-seagreen-100 cursor-pointer">Destination</Link></li>
-            <li><Link to="/contact" className="hover:text-seagreen-100 cursor-pointer">Services</Link></li>
-            <li><Link to="/blog" className="hover:text-seagreen-100 cursor-pointer">Blog</Link></li>
+            <li><a href="/" className="text-blue-50 font-semibold">Prices</a></li>
+            <li><a href="/" className="text-blue-50 font-semibold">Whitepaper</a></li>
+            <li><a href="/" className="text-blue-50 font-semibold">Charts</a></li>
+            <li><a href="/" className="text-blue-50 font-semibold">Resources</a></li>
+            <li><a href="/" className="text-blue-50 font-semibold">Sign In</a></li>
+            <li><a href="/" className="py-3 px-5 bg-seagreen-50 rounded-full text-blue-50 font-semibold hover:bg-blue-50 hover:text-seagreen-50 duration-300">Get Started</a></li>
           </ul>
         </nav>
-
+        {/* 
         <div className="">
           <a href={require("../assets/whitepapper.pdf")} download="Whitepaper">
-            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 hover:text-seagreen-100 cursor-pointer text-black-100 py-2 px-8 rounded-sm font-semibold">
+            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 text-blue-50 font-semibold text-black-100 py-2 px-8 rounded-sm font-semibold">
               Whitepaper
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
@@ -47,7 +48,7 @@ export default function Menu() {
         </button>
       </div>
 
-      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto text-center font-poppins font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
+      {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto transition-all duration-300 text-center font-work font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
             <a href="/" className="logo w-1/2">
@@ -56,19 +57,19 @@ export default function Menu() {
           </div>
         </div>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</Link>
+          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/about" className="text-lg ml-4 text-gray-200 font-semibold">About</Link>
+          <a href="/about" className="text-lg ml-4 text-gray-200 font-semibold">About</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <Link to="/destination" className="text-lg ml-4 text-gray-200 font-semibold">Destination</Link>
+          <a href="/destination" className="text-lg ml-4 text-gray-200 font-semibold">Destination</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <Link to="/contact" className="text-lg ml-4 text-gray-200 font-semibold">Service</Link>
+          <a href="/contact" className="text-lg ml-4 text-gray-200 font-semibold">Service</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <Link to="/blog" className="text-lg ml-4 text-gray-200 font-semibold">Blog</Link>
+          <a href="/blog" className="text-lg ml-4 text-gray-200 font-semibold">Blog</a>
         </button>
         <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
           <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-gray-200 font-semibold">Whitepaper</a>

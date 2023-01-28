@@ -1,8 +1,13 @@
-.bg-img{
+.bg-img {
   background-image: url(../src/assets/box.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.bg-curve {
+  border-bottom-left-radius: 20% 10%;
+  border-bottom-right-radius: 20% 10%;
 }
 
 #tsparticles {
@@ -19,6 +24,7 @@
 .slick-slide {
   padding: 20px;
 }
+
 .slick-list {
   padding: -20px;
 }
