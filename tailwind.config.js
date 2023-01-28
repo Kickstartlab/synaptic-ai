@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
     colors: {
       seagreen: {
-        "50": "#F5F9FF",
+        "50": "#EBF5FF",
         "100": "#03E6B6",
         "200": "#00CEEA",
       },
