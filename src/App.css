@@ -10,6 +10,20 @@
   border-bottom-right-radius: 20% 10%;
 }
 /* 
+.justice {
+  animation: rotation 3s infinite linear;
+  animation-delay: 5s;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
 #tsparticles {
   position: absolute;
   top: 0;
@@ -19,4 +33,4 @@
   padding: 0;
   margin: 0;
   z-index: -1;
-} */
+}

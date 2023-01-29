@@ -24,14 +24,14 @@ function Particle() {
                     },
                     "particles": {
                         "number": {
-                            "value": 30,
+                            "value": 15,
                             "density": {
                                 "enable": false,
                                 "value_area": 800
                             }
                         },
                         "color": {
-                            "value": "#03E6B6"
+                            "value": "#090D99"
                         },
                         "shape": {
                             "type": "circle",
@@ -54,7 +54,7 @@ function Particle() {
                             "random": false,
                             "anim": {
                                 "enable": false,
-                                "speed": 40,
+                                "speed": 20,
                                 "size_min": 0.1,
                                 "sync": false
                             }
@@ -71,7 +71,7 @@ function Particle() {
                         },
                         "line_linked": {
                             "enable": false,
-                            "distance": 400,
+                            "distance": 600,
                             "color": "#03E6B6",
                             "opacity": 0.4,
                             "width": 2
@@ -104,13 +104,13 @@ function Particle() {
                         },
                         "modes": {
                             "grab": {
-                                "distance": 400,
+                                "distance": 600,
                                 "line_linked": {
                                     "opacity": 1
                                 }
                             },
                             "bubble": {
-                                "distance": 400,
+                                "distance": 600,
                                 "size": 40,
                                 "duration": 2,
                                 "opacity": 8,
