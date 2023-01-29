@@ -9,8 +9,8 @@ import law from '../assets/law.png';
 import p_1 from '../assets/p-1.png';
 import p_2 from '../assets/p-2.png';
 import p_3 from '../assets/p-3.png';
-import Particle from './Particle';
-// import Accordion from './Accordion';
+// import Particle from './Particle';
+import Accordion from './Accordion';
 
 
 
