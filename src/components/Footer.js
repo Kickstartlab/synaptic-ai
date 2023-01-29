@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className='container mx-auto lg:px-12 px-5'>
 
-      <div className="lg:flex items-center justify-between font-work h-20">
+      <div className="lg:flex items-center justify-between font-work py-5">
         <a href="/" className="logo">
           <h2 className="text-2xl font-extrabold">
             LAWYER AI
