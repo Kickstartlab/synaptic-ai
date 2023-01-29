@@ -3,12 +3,13 @@ import Footer from './Footer'
 import Menu from './Menu'
 import top from '../assets/top.png';
 import token from '../assets/token.png';
-import mosq from '../assets/mosq.png';
-import Vector_2 from '../assets/Vector_2.png';
 import justice from '../assets/justice.png';
-import card from '../assets/card.png';
-import say from '../assets/say.png';
-import Ok from '../assets/Ok.png';
+import faq from '../assets/faq.png';
+import law from '../assets/law.png';
+import p_1 from '../assets/p-1.png';
+import p_2 from '../assets/p-2.png';
+import p_3 from '../assets/p-3.png';
+
 
 
 export default function Home() {
@@ -50,30 +51,30 @@ export default function Home() {
                     </div>
                 </div>
 
-                <img src={justice} alt="" className='flex mx-auto' />
+                <img src={justice} alt="" className='lg:flex mx-auto -mb-44 hidden' />
             </div>
 
             {/* what make us different */}
 
-            <div className="bg-seagreen-50 bg-curve">
-                <div className="lg:px-20 px-5 py-6 container mx-auto">
+            <div className=" bg-img">
+                <div className="lg:px-20 px-5 py-12 container mx-auto">
 
-                    <div className="lg:flex items-center justify-center">
+                    <div className="lg:flex items-center justify-between">
                         <div className=" lg:w-1/2">
-                            <h2 className="text-blue-100 md:text-5xl text-2xl font-semibold leading-10 tracking-wide font-spartan">
-                                WHAT MAKES US DIFFERENT?
+                            <h2 className="text-blue-100 md:text-6xl text-2xl font-semibold leading-10 tracking-wide font-spartan">
+                                WHAT<br></br> MAKES US DIFFERENT?
                             </h2>
 
                         </div>
 
-                        <div className="img md:mt-0 mt-12 lg:w-1/2">
+                        <div className="img lg:mt-0 mt-5 lg:w-1/3">
                             <p className='font-semibold text-gray-100 font-work opacity-40'>
                                 LAWYER AI is the pioneering project of 2023 with the aim to change the way how the world works , Many people do not have access to lawyers or cant afford one.
                             </p>
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-y-12 items-center justify-center lg:py-20 py-6">
+                    <div className="flex flex-col lg:gap-y-12 gap-y-6 items-center justify-center lg:py-12 py-6">
                         <h1 className="text-blue-100 md:text-5xl text-2xl font-semibold font-spartan">
                             Check out our Smart Contract
                         </h1>
@@ -98,27 +99,63 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="container mx-auto">
-                <div className="flex justify-center items-center gap-6">
+            <div className="container mx-auto lg:-mt-5">
+                <div className="flex flex-wrap justify-center items-center gap-6">
 
-                    <div className="border-4 border-seagreen-100 rounded-xl p-5 flex flex-col items-center">
+                    <div className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col">
+                        <h4 className="text-lg text-blue-100 font-semibold text-left">
+                            1 ETH STARTING LP
+                        </h4>
+                        <p className='text-gray-100 font-work opacity-40 pt-2'>
+                            Total Supply:
+                            1,000,000,000
+                        </p>
+                        <button className='flex gap-2 items-center text-blue-50 font-work pt-5'>
+                            Whitepaper
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
 
+                        </button>
                     </div>
-                    <div className="border-4 border-seagreen-100 rounded-xl p-5 flex flex-col items-center">
-                        <h4 className="text-2xl text-blue-100 font-bold">
+                    <div className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col">
+                        <h4 className="text-xl text-blue-100 font-bold text-left">
                             4% SELL TAX
                         </h4>
+                        <p className='text-gray-100 font-work opacity-40 pt-2'>
+                            Total Supply:
+                            1,000,000,000
+                        </p>
+                        <button className='flex gap-2 items-center text-blue-50 font-work pt-5'>
+                            Whitepaper
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </button>
                     </div>
-                    <div className="border-4 border-seagreen-100 rounded-xl p-5 flex flex-col items-center">
-                        <h4 className="text-2xl text-blue-100 font-bold">
+                    <div className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col">
+                        <h4 className="text-xl text-blue-100 font-bold text-left">
                             4% BUY TAX
                         </h4>
+                        <p className='text-gray-100 font-work opacity-40 pt-2'>
+                            Total Supply:
+                            1,000,000,000
+                        </p>
+                        <button className='flex gap-2 items-center text-blue-50 font-work pt-5'>
+                            Whitepaper
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
             </div>
 
 
             <div className="lg:px-20 px-5 container mx-auto">
+
                 {/* roadmap */}
 
                 <div className='lg:py-20 pt-6'>
@@ -206,6 +243,55 @@ export default function Home() {
                     </div>
                 </div>
 
+                {/* advance response section */}
+
+                <div className="lg:py-12 py-6">
+                    <div className="lg:flex items-center justify-between">
+                        <div className="lg:w-1/2">
+                            <h3 className="text-blue-100 md:text-5xl mb-5 text-2xl font-semibold font-spartan">
+                                Advanced Responses
+                            </h3>
+                            <p className='font-semibold text-gray-100 font-work opacity-40 text-lg'>
+                                One of the most impressive features of Lawyer AI is its advanced responses to complex legal issues. Using its machine learning capabilities, Lawyer AI is able to understand the nuances of a legal issue and provide detailed, accurate advice on how to proceed. This can be incredibly valuable for lawyers who are working on complex cases and need to make informed decisions quickly
+                            </p>
+                        </div>
+
+                        <div className="lg:w-1/2 lg:mt-0 mt-6">
+                            <img src={law} alt="law" className='lg:float-right' />
+                        </div>
+                    </div>
+                </div>
+
+                {/* our partners */}
+
+                <div className="lg:pb-12 pb-6">
+
+                    <h3 className="text-blue-100 md:text-5xl lg:mb-12 mb-5 text-2xl font-semibold text-center font-spartan">
+                        Our Partners
+                    </h3>
+
+                    <div className="flex justify-between items-center gap-3">
+                        <div><img src={p_1} alt="" className=''/></div>
+                        <div><img src={p_2} alt="" className=''/></div>
+                        <div><img src={p_3} alt="" className=''/></div>
+                    </div>
+                </div>
+
+                {/* faq section */}
+                <div className="lg:pb-12 pb-6">
+                    <div className="lg:flex items-center justify-between gap-20">
+                        <div className="lg:w-1/2">
+                            <h3 className="text-blue-100 md:text-5xl mb-5 text-2xl font-semibold font-work">
+                                FAQ
+                            </h3>
+
+                        </div>
+
+                        <div className="lg:w-1/2 lg:mt-0 mt-6">
+                            <img src={faq} alt="" className='lg:float-right' />
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* get in touch */}

@@ -38,7 +38,9 @@ export default function Menu() {
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
         <a href="/" className="logo w-1/2">
-          <img src={logo} alt="Logo" />
+          <h2 className="text-3xl font-extrabold">
+            LAWYER AI
+          </h2>
         </a>
 
         <button onClick={() => setShow(!show)} className="nav cursor-pointer">
@@ -51,29 +53,28 @@ export default function Menu() {
       {show ? <div className="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-3/4 overflow-y-auto transition-all duration-300 text-center font-work font-semibold bg-seagreen-100 z-20" style={{ left: "0" }}>
         <div className="text-gray-100 text-xl">
           <div className="p-2.5 mt-1 flex items-center">
-            <a href="/" className="logo w-1/2">
-              <img src={logo} alt="Logo" />
+            <a href="/" className="logo">
+              <h2 className="text-2xl font-extrabold">
+                LAWYER AI
+              </h2>
             </a>
           </div>
         </div>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-gray-200 font-semibold">Home</a>
+          <a href="/" className="text-lg ml-4 text-blue-100 font-semibold">Prices</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/about" className="text-lg ml-4 text-gray-200 font-semibold">About</a>
+          <a href="/about" className="text-lg ml-4 text-blue-100 font-semibold">Whitepaper</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/destination" className="text-lg ml-4 text-gray-200 font-semibold">Destination</a>
+          <a href="/destination" className="text-lg ml-4 text-blue-100 font-semibold">Charts</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/contact" className="text-lg ml-4 text-gray-200 font-semibold">Service</a>
+          <a href="/contact" className="text-lg ml-4 text-blue-100 font-semibold">Resources</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/blog" className="text-lg ml-4 text-gray-200 font-semibold">Blog</a>
+          <a href="/blog" className="text-lg ml-4 text-blue-100 font-semibold">Sign In</a>
         </button>
-        <div className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper" className="text-lg ml-4 text-gray-200 font-semibold">Whitepaper</a>
-        </div>
       </div> : null
       }
 

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='container mx-auto lg:px-20 px-5'>
+    <footer className='container mx-auto lg:px-12 px-5'>
 
       <div className="lg:flex items-center justify-between font-work h-20">
         <a href="/" className="logo">
@@ -14,7 +14,7 @@ export default function Footer() {
         </a>
 
         <nav>
-          <ul className="text-md flex justify-center gap-8 items-center">
+          <ul className="text-md lg:flex lg:pt-0 pt-5 justify-center gap-8 items-center">
             <li><a href="/" className="text-blue-100 font-semibold">Products</a></li>
             <li><a href="/" className="text-blue-100 font-semibold">Learn</a></li>
             <li><a href="/" className="text-blue-100 font-semibold">Company</a></li>
