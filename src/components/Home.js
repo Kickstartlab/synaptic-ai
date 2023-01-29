@@ -9,18 +9,41 @@ import law from '../assets/law.png';
 import p_1 from '../assets/p-1.png';
 import p_2 from '../assets/p-2.png';
 import p_3 from '../assets/p-3.png';
+import Particle from './Particle';
+// import Accordion from './Accordion';
 
 
 
 export default function Home() {
 
+    const accordionData = [
+        {
+            title: 'Why US?',
+            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+            laborum cupiditate possimus labore, hic temporibus velit dicta earum
+            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+            voluptatem.`
+        },
+        {
+            title: 'How to become a part of it?',
+            content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
+            reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
+            quaerat iure quos dolorum accusantium ducimus in illum vero commodi
+            pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
+            quidem maiores doloremque est numquam praesentium eos voluptatem amet!
+            Repudiandae, mollitia id reprehenderit a ab odit!`
+        }
+    ];
+
     return (
         <div className="bg-white-100">
+            {/* <Particle /> */}
 
             {/* top section */}
 
-            <div className="lg:px-20 px-5 container mx-auto relative z-20">
+            <div className="lg:px-20 px-5 container mx-auto z-20">
                 <Menu />
+
                 <div className="lg:flex block justify-between items-center pt-12">
                     <div className=" lg:w-1/2">
                         <h1 className="text-blue-100 md:text-6xl text-2xl font-semibold leading-10 tracking-wide font-spartan">
@@ -112,8 +135,8 @@ export default function Home() {
                         </p>
                         <button className='flex gap-2 items-center text-blue-50 font-work pt-5'>
                             Whitepaper
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
                         </button>
@@ -128,8 +151,8 @@ export default function Home() {
                         </p>
                         <button className='flex gap-2 items-center text-blue-50 font-work pt-5'>
                             Whitepaper
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
                         </button>
@@ -144,8 +167,8 @@ export default function Home() {
                         </p>
                         <button className='flex gap-2 items-center text-blue-50 font-work pt-5'>
                             Whitepaper
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
                         </button>
@@ -271,9 +294,9 @@ export default function Home() {
                     </h3>
 
                     <div className="flex justify-between items-center gap-3">
-                        <div><img src={p_1} alt="" className=''/></div>
-                        <div><img src={p_2} alt="" className=''/></div>
-                        <div><img src={p_3} alt="" className=''/></div>
+                        <div><img src={p_1} alt="" className='' /></div>
+                        <div><img src={p_2} alt="" className='' /></div>
+                        <div><img src={p_3} alt="" className='' /></div>
                     </div>
                 </div>
 
@@ -284,6 +307,12 @@ export default function Home() {
                             <h3 className="text-blue-100 md:text-5xl mb-5 text-2xl font-semibold font-work">
                                 FAQ
                             </h3>
+
+                            <div className="accordion mt-5">
+                                {accordionData.map(({ title, content }) => (
+                                    <Accordion title={title} content={content} />
+                                ))}
+                            </div>
 
                         </div>
 

@@ -70,7 +70,7 @@ function Particle() {
                             }
                         },
                         "line_linked": {
-                            "enable": true,
+                            "enable": false,
                             "distance": 400,
                             "color": "#03E6B6",
                             "opacity": 0.4,
