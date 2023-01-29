@@ -12,9 +12,9 @@ export default function Menu() {
 
     <header>
       <div className="lg:flex hidden items-center justify-between font-work h-20">
-        <a href="/" className="logo">
-          <img src={logo} alt="Logo" />
-        </a>
+      <h2 className="text-3xl font-extrabold">
+            LAWYER AI
+          </h2>
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
