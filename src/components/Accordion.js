@@ -5,7 +5,7 @@ const Accordion = ({ title, content }) => {
 
     return (
         <div className="accordion-item border border-seagreen-100 bg-seagreen-50 p-4">
-            <div className="accordion-title flex justify-between items-center" onClick={() => setIsActive(!isActive)}>
+            <div className="accordion-title flex justify-between items-center cursor-pointer" onClick={() => setIsActive(!isActive)}>
                 <div className='flex gap-3 items-center font-work'>
                     <div className="w-3 h-3 rounded-full bg-purple-100">
 

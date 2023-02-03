@@ -105,12 +105,12 @@ export default function Home() {
 
                         <div data-aos="fade-left" className="img lg:mt-0 mt-5 lg:w-1/3">
                             <p className='font-semibold text-gray-100 font-work opacity-40'>
-                                LAWYER AI is the pioneering project of 2023 with the aim to change the way how the world works , Many people do not have access to lawyers or cant afford one.
+                                LAWYER AI is the pioneering project of 2023 with the aim to change the way how the world works , Many people do not have access to lawyers or cant afford one so we have providing the Ai bot which will help you to get legal advice without paying a single penny.
                             </p>
                         </div>
                     </div>
 
-                    <div  data-aos="fade-up" className="flex flex-col lg:gap-y-12 gap-y-6 items-center justify-center lg:py-12 py-6">
+                    <div data-aos="fade-up" className="flex flex-col lg:gap-y-12 gap-y-6 items-center justify-center lg:py-12 py-6">
                         <h1 className="text-blue-100 md:text-5xl text-2xl font-semibold font-spartan">
                             Check out our Smart Contract
                         </h1>
@@ -138,7 +138,7 @@ export default function Home() {
             <div className="container mx-auto lg:-mt-5">
                 <div className="flex flex-wrap justify-center items-center gap-6">
 
-                    <div data-aos="flip-left" data-aos-duration="3000"  data-aos-delay="50"  data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
+                    <div data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
                         <h4 className="text-lg text-blue-100 font-semibold text-left group-hover:text-white-100">
                             1 ETH STARTING LP
                         </h4>
@@ -154,7 +154,7 @@ export default function Home() {
 
                         </button>
                     </div>
-                    <div data-aos="flip-up" data-aos-duration="3000"  data-aos-delay="50"  data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
+                    <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
                         <h4 className="text-xl text-blue-100 font-bold text-left group-hover:text-white-100">
                             4% SELL TAX
                         </h4>
@@ -170,7 +170,7 @@ export default function Home() {
 
                         </button>
                     </div>
-                    <div data-aos="flip-right" data-aos-duration="3000"  data-aos-delay="50"  data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
+                    <div data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
                         <h4 className="text-xl text-blue-100 font-bold text-left group-hover:text-white-100">
                             4% BUY TAX
                         </h4>
@@ -307,9 +307,9 @@ export default function Home() {
                     </h3>
 
                     <div className="flex justify-between items-center gap-3">
-                        <div data-aos="flip-right" data-aos-duration="3000"  data-aos-delay="50"><img src={p_1} alt="" className='' /></div>
-                        <div data-aos="flip-up" data-aos-duration="3000"  data-aos-delay="50"><img src={p_2} alt="" className='' /></div>
-                        <div data-aos="flip-left" data-aos-duration="3000"  data-aos-delay="50"><img src={p_3} alt="" className='' /></div>
+                        <div data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50"><img src={p_1} alt="" className='' /></div>
+                        <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50"><img src={p_2} alt="" className='' /></div>
+                        <div data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50"><img src={p_3} alt="" className='' /></div>
                     </div>
                 </div>
 
