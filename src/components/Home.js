@@ -28,7 +28,7 @@ export default function Home() {
 
     const accordionData = [
         {
-            title: 'Why US?',
+            title: 'How to use AI bot?',
             content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
             laborum cupiditate possimus labore, hic temporibus velit dicta earum
             suscipit commodi eum enim atque at? Et perspiciatis dolore iure
@@ -120,7 +120,7 @@ export default function Home() {
                         </button>
                     </div>
 
-                    <div className="flex items-center justify-center gap-8">
+                    <div id='tokenomics' className="flex items-center justify-center gap-8">
                         <div data-aos="fade-right" className="">
                             <h1 className="text-blue-100 md:text-5xl text-2xl font-semibold font-spartan">
                                 Tokenomics
@@ -135,7 +135,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="container mx-auto lg:-mt-5">
+            <div xclassName="container mx-auto lg:-mt-8">
                 <div className="flex flex-wrap justify-center items-center gap-6">
 
                     <div data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
@@ -163,7 +163,7 @@ export default function Home() {
                             1,000,000,000
                         </p>
                         <button className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
-                            Whitepaper
+                            Buy Now
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
@@ -179,7 +179,7 @@ export default function Home() {
                             1,000,000,000
                         </p>
                         <button className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
-                            Whitepaper
+                            Chart
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
@@ -300,16 +300,16 @@ export default function Home() {
 
                 {/* our partners */}
 
-                <div className="lg:pb-12 pb-6">
+                <div id='partners' className="lg:pb-12 pb-6">
 
                     <h3 data-aos="fade-up" className="text-blue-100 md:text-5xl lg:mb-12 mb-5 text-2xl font-semibold text-center font-spartan">
                         Our Partners
                     </h3>
 
                     <div className="flex justify-between items-center gap-3">
-                        <div data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50"><img src={p_1} alt="" className='' /></div>
-                        <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50"><img src={p_2} alt="" className='' /></div>
-                        <div data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50"><img src={p_3} alt="" className='' /></div>
+                        <a href='https://ibb.co/RDxLPrb' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50"><img src={p_1} alt="" className='' /></a>
+                        <a href='https://ibb.co/wcyCBB7' data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50"><img src={p_2} alt="" className='' /></a>
+                        <a href='https://ibb.co/jr0BKsR' data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50"><img src={p_3} alt="" className='' /></a>
                     </div>
                 </div>
 
@@ -351,10 +351,6 @@ export default function Home() {
 
                         <div className="px-8 py-5 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 text-lg">
                             Twitter
-                        </div>
-
-                        <div className="px-8 py-5 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 text-lg">
-                            Discord
                         </div>
                     </div>
                 </div>

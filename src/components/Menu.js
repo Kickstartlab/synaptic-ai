@@ -17,21 +17,11 @@ export default function Menu() {
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
             <li><a href="/" className="text-blue-50 font-semibold">Prices</a></li>
-            <li><a href="/" className="text-blue-50 font-semibold">Whitepaper</a></li>
+            <li><a href="#tokenomics" className="text-blue-50 font-semibold">Tokenomics</a></li>
             <li><a href="/" className="text-blue-50 font-semibold">Charts</a></li>
-            <li><a href="/" className="text-blue-50 font-semibold">Resources</a></li>
-            <li><a href="/" className="text-blue-50 font-semibold">Sign In</a></li>
-            <li><a href="/" className="py-3 px-5 bg-seagreen-50 rounded-full text-blue-50 font-semibold hover:bg-blue-50 hover:text-seagreen-50 duration-300">Get Started</a></li>
-          </ul>
+            <li><a href="#partners" className="text-blue-50 font-semibold">Resources</a></li>
+             </ul>
         </nav>
-        {/* 
-        <div className="">
-          <a href={require("../assets/whitepapper.pdf")} download="Whitepaper">
-            <button className="bg-seagreen-100 hover:bg-seagreen-50 hover:border-2 hover:border-seagreen-100 text-blue-50 font-semibold text-black-100 py-2 px-8 rounded-sm font-semibold">
-              Whitepaper
-            </button>
-          </a>
-        </div> */}
       </div>
 
       <div className="lg:hidden flex items-center justify-between pt-5 font-nutino-sans">
