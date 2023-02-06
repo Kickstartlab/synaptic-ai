@@ -136,7 +136,7 @@ export default function Home() {
                         <button title="copy" onClick={() => copyToClipBoard('0x3ce38bc4df7112e3944d724572e42b0cb805ad2a')} data-aos="zoom-in" className="text-white-100 px-6 py-4 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 uppercase">
                             Copy contract address
                         </button>
-                        <span className="-mt-8 absolute duration-300">
+                        <span className="-mt-6 absolute duration-300">
                             {copySuccess}
                         </span>
 
