@@ -133,11 +133,12 @@ export default function Home() {
                             Check out our Smart Contract
                         </h1>
 
-                        <a href="https://etherscan.io/address/0x3ce38bc4df7112e3944d724572e42b0cb805ad2a">
-                            <button data-aos="zoom-in" className="text-white-100 px-6 py-4 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100">
-                                VIEW SMART CONTRACT
-                            </button>
-                        </a>
+                        <button title="copy" onClick={() => copyToClipBoard('0x3ce38bc4df7112e3944d724572e42b0cb805ad2a')} data-aos="zoom-in" className="text-white-100 px-6 py-4 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100 uppercase">
+                            Copy contract address
+                        </button>
+                        <span className="-mt-8 absolute duration-300">
+                            {copySuccess}
+                        </span>
 
                     </div>
 
@@ -153,6 +154,7 @@ export default function Home() {
                             <img src={token} alt="" />
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -226,7 +228,7 @@ export default function Home() {
                             className="hidden lg:block w-5 ml-3.5 bg-blue-50 absolute h-full left-1/2 transform -translate-x-1/2 line">
                         </div>
 
-                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                        <div className="mt-6 sm:mt-0 sm:mb-8">
                             <div className="flex flex-col sm:flex-row items-center">
                                 <div data-aos="fade-right" className="flex justify-start w-full mx-auto items-center lg:ml-52">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
@@ -248,7 +250,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                        <div className="mt-6 sm:mt-0 sm:mb-8">
                             <div className="flex flex-col sm:flex-row items-center">
                                 <div data-aos="fade-left" className="flex justify-end w-full mx-auto items-center lg:mr-36">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
@@ -270,7 +272,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                        <div className="mt-6 sm:mt-0 sm:mb-8">
                             <div className="flex flex-col sm:flex-row items-center">
                                 <div data-aos="fade-right" className="flex justify-start w-full mx-auto items-center lg:ml-52">
                                     <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
