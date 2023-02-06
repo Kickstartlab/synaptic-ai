@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import top from '../assets/top.png';
@@ -6,9 +6,9 @@ import token from '../assets/token.png';
 import justice from '../assets/justice.png';
 import faq from '../assets/faq.png';
 import law from '../assets/law.png';
-import p_1 from '../assets/p-1.png';
-import p_2 from '../assets/p-2.png';
-import p_3 from '../assets/p-3.png';
+import p_1 from '../assets/p_1.jpg';
+import p_2 from '../assets/p_2.jpg';
+import p_3 from '../assets/p_3.jpg';
 import Particle from './Particle';
 import Accordion from './Accordion';
 import Aos from 'aos';
@@ -25,6 +25,19 @@ export default function Home() {
         });
         Aos.refresh();
     }, [])
+
+    const [copySuccess, setCopySuccess] = useState('');
+
+    // your function to copy here
+
+    const copyToClipBoard = async copyMe => {
+        try {
+            await navigator.clipboard.writeText(copyMe);
+            setCopySuccess('Copied!');
+        } catch (err) {
+            setCopySuccess('Failed to copy!');
+        }
+    };
 
     const accordionData = [
         {
@@ -66,14 +79,19 @@ export default function Home() {
                             robot lawyer</h1>
 
                         <div className="font-work flex items-center gap-5 mt-6">
-                            <a href="/">
+                            <a href="https://app.uniswap.org/">
                                 <button className="text-white-100 px-6 py-4 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100">
                                     Buy Now
                                 </button>
                             </a>
-                            <a href="/">
+                            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce">
                                 <button className="text-purple-100 px-6 py-4 border-2 border-purple-100 rounded-2xl font-semibold hover:bg-purple-100 hover:text-white-100">
                                     CHART
+                                </button>
+                            </a>
+                            <a href="https://app.unicrypt.network/amm/uni-v2/pair/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce">
+                                <button className="text-purple-100 px-5 py-2.5 border-2 border-purple-100 rounded-2xl font-semibold hover:bg-purple-100 hover:text-white-100">
+                                    <i class="fa fa-lock fa-2x" aria-hidden="true"></i>
                                 </button>
                             </a>
 
@@ -115,9 +133,12 @@ export default function Home() {
                             Check out our Smart Contract
                         </h1>
 
-                        <button data-aos="zoom-in" className="text-white-100 px-6 py-4 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100">
-                            VIEW SMART CONTRACT
-                        </button>
+                        <a href="https://etherscan.io/address/0x3ce38bc4df7112e3944d724572e42b0cb805ad2a">
+                            <button data-aos="zoom-in" className="text-white-100 px-6 py-4 bg-purple-100 rounded-2xl font-semibold hover:bg-white-100 border-2 border-purple-100 hover:text-purple-100">
+                                VIEW SMART CONTRACT
+                            </button>
+                        </a>
+
                     </div>
 
                     <div id='tokenomics' className="flex items-center justify-center gap-8">
@@ -138,10 +159,10 @@ export default function Home() {
             <div xclassName="container mx-auto lg:-mt-8">
                 <div className="flex flex-wrap justify-center items-center gap-6">
 
-                    <div data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
-                        <h4 className="text-lg text-blue-100 font-semibold text-left group-hover:text-white-100">
+                    <div data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50 h-48">
+                        {/* <h4 className="text-lg text-blue-100 font-semibold text-left group-hover:text-white-100">
                             1 ETH STARTING LP
-                        </h4>
+                        </h4> */}
                         <p className='text-gray-100 font-work opacity-40 pt-2 group-hover:text-white-100'>
                             Total Supply:
                             1,000,000,000
@@ -154,7 +175,7 @@ export default function Home() {
 
                         </button>
                     </div>
-                    <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
+                    <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50 h-48">
                         <h4 className="text-xl text-blue-100 font-bold text-left group-hover:text-white-100">
                             4% SELL TAX
                         </h4>
@@ -162,15 +183,15 @@ export default function Home() {
                             Total Supply:
                             1,000,000,000
                         </p>
-                        <button className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
+                        <a href='https://app.uniswap.org/' className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
                             Buy Now
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
-                    <div data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50">
+                    <div data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50 h-48">
                         <h4 className="text-xl text-blue-100 font-bold text-left group-hover:text-white-100">
                             4% BUY TAX
                         </h4>
@@ -178,13 +199,13 @@ export default function Home() {
                             Total Supply:
                             1,000,000,000
                         </p>
-                        <button className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
+                        <a href='https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce' className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
                             Chart
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                             </svg>
 
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -199,84 +220,104 @@ export default function Home() {
                         Q1 2023 Road Map for<br></br> Lawyer AI
                     </h3>
 
-                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 justify-between mt-16">
-                        <div data-aos="fade-right" className='flex flex-col gap-y-5'>
-                            <div className="flex gap-5 items-center">
-                                <div className="w-12 h-12 bg-seagreen-50 rounded-2xl">
+                    <div className="relative font-spartan text-sm font-semibold lg:pt-8 pt-5">
 
-                                </div>
-                                <h4 className="text-2xl font-bold text-blue-100 font-spartan">
-                                    Expand legal research database
-                                </h4>
-                            </div>
-
-                            <p className="text-blue-100 opacity-40 font-work ml-14">
-                                In the first quarter of 2023, we plan to significantly expand the legal research database that is used by Lawyer AI. This will include adding more cases, statutes, and regulations from a wider range of jurisdictions, as well as integrating new sources of legal information.
-                            </p>
+                        <div
+                            className="hidden lg:block w-5 ml-3.5 bg-blue-50 absolute h-full left-1/2 transform -translate-x-1/2 line">
                         </div>
 
-                        <div data-aos="fade-left" className='flex flex-col gap-y-5'>
-                            <div className="flex gap-5 items-center">
-                                <div className="w-12 h-12 bg-purple-50 rounded-2xl">
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-right" className="flex justify-start w-full mx-auto items-center lg:ml-52">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
+                                        <h4 className="text-xl font-semibold">
+                                            Develop new integrations
+                                        </h4>
+                                        <p className="text-blue-100 opacity-40 font-work">
+                                            We will also be working to improve the machine learning algorithms that power Lawyer AI, with a focus on increasing the accuracy and efficiency of the tool. This will involve training the algorithms on a larger and more diverse dataset, as well as optimizing the underlying code.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 -ml-3.5 text-blue-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 transform rotate-180">
+                                        <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                                    </svg>
 
                                 </div>
-                                <h4 className="text-2xl font-bold text-blue-100 font-spartan">
-                                    Develop new integrations
-                                </h4>
                             </div>
-
-                            <p className="text-blue-100 opacity-40 font-work ml-14">
-                                We will also be working to improve the machine learning algorithms that power Lawyer AI, with a focus on increasing the accuracy and efficiency of the tool. This will involve training the algorithms on a larger and more diverse dataset, as well as optimizing the underlying code.
-                            </p>
                         </div>
 
-                        <div data-aos="fade-right" className='flex flex-col gap-y-5'>
-                            <div className="flex gap-5 items-center">
-                                <div className="w-12 h-12 bg-pink-100 rounded-2xl">
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-left" className="flex justify-end w-full mx-auto items-center lg:mr-36">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
+                                        <h4 className="text-xl font-semibold">
+                                            Improve machine learning algorithms
+                                        </h4>
+                                        <p className="text-blue-100 opacity-40 font-work">
+                                            We will also be working to improve the machine learning algorithms that power Lawyer AI, with a focus on increasing the accuracy and efficiency of the tool. This will involve training the algorithms on a larger and more diverse dataset, as well as optimizing the underlying code.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 ml-2.5 text-blue-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                                        <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                                    </svg>
 
                                 </div>
-                                <h4 className="text-2xl font-bold text-blue-100 font-spartan">
-                                    Improve machine learning algorithms
-                                </h4>
                             </div>
-
-                            <p className="text-blue-100 opacity-40 font-work ml-14">
-                                We will also be working to improve the machine learning algorithms that power Lawyer AI, with a focus on increasing the accuracy and efficiency of the tool. This will involve training the algorithms on a larger and more diverse dataset, as well as optimizing the underlying code.
-                            </p>
                         </div>
 
-                        <div data-aos="fade-left" className='flex flex-col gap-y-5'>
-                            <div className="flex gap-5 items-center">
-                                <div className="w-12 h-12 bg-pink-200 rounded-2xl">
+                        <div className="mt-6 sm:mt-0 sm:mb-12">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-right" className="flex justify-start w-full mx-auto items-center lg:ml-52">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
+                                        <h4 className="text-xl font-semibold">
+                                            Expand marketing and sales efforts:
+                                        </h4>
+                                        <p className="text-blue-100 opacity-40 font-work">
+                                            In the first quarter of 2023, we plan to significantly expand the legal research database that is used by Lawyer AI. This will include adding more cases, statutes, and regulations from a wider range of jurisdictions, as well as integrating new sources of legal information.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 -ml-3.5 text-blue-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 transform rotate-180">
+                                        <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                                    </svg>
 
                                 </div>
-                                <h4 className="text-2xl font-bold text-blue-100 font-spartan">
-                                    Expand marketing and sales efforts:
-                                </h4>
                             </div>
-
-                            <p className="text-blue-100 opacity-40 font-work ml-14">
-                                In the first quarter of 2023, we plan to significantly expand the legal research database that is used by Lawyer AI. This will include adding more cases, statutes, and regulations from a wider range of jurisdictions, as well as integrating new sources of legal information.
-                            </p>
                         </div>
+
+                        <div className="mt-6 sm:mt-0">
+                            <div className="flex flex-col sm:flex-row items-center">
+                                <div data-aos="fade-left" className="flex justify-end w-full mx-auto items-center lg:mr-36">
+                                    <div className="w-full sm:w-72 sm:mr-8 p-5 border-2 border-blue-50 rounded-sm shadow space-y-5 text-blue-100">
+                                        <h4 className="text-xl font-semibold">
+                                            Enhance user  interface
+                                        </h4>
+                                        <p className="text-blue-100 opacity-40 font-work">
+                                            To make Lawyer AI even easier to use, we will be working on a number of improvements to the user interface. This will include adding new features and functionality, as well as streamlining the overall design to make it more intuitive and user-friendly.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="lg:block hidden absolute left-1/2 ml-2.5 text-blue-50">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                                        <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div className="mt-14 lg:w-1/2 flex mx-auto">
-                        <div data-aos="fade-up" className='flex flex-col gap-y-5'>
-                            <div className="flex gap-5 items-center">
-                                <div className="w-12 h-12 bg-pink-50 rounded-2xl">
 
-                                </div>
-                                <h4 className="text-2xl font-bold text-blue-100 font-spartan">
-                                    Enhance user  interface
-                                </h4>
-                            </div>
 
-                            <p className="text-blue-100 opacity-40 font-work ml-14">
-                                To make Lawyer AI even easier to use, we will be working on a number of improvements to the user interface. This will include adding new features and functionality, as well as streamlining the overall design to make it more intuitive and user-friendly.
-                            </p>
-                        </div>
-                    </div>
                 </div>
 
                 {/* advance response section */}
@@ -302,14 +343,14 @@ export default function Home() {
 
                 <div id='partners' className="lg:pb-12 pb-6">
 
-                    <h3 data-aos="fade-up" className="text-blue-100 md:text-5xl lg:mb-12 mb-5 text-2xl font-semibold text-center font-spartan">
+                    <h3 data-aos="fade-up" className="text-blue-100 md:text-5xl text-2xl font-semibold text-center font-spartan">
                         Our Partners
                     </h3>
 
-                    <div className="flex justify-between items-center gap-3">
-                        <a href='https://ibb.co/RDxLPrb' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50"><img src={p_1} alt="" className='' /></a>
-                        <a href='https://ibb.co/wcyCBB7' data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50"><img src={p_2} alt="" className='' /></a>
-                        <a href='https://ibb.co/jr0BKsR' data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50"><img src={p_3} alt="" className='' /></a>
+                    <div className="flex justify-between items-center gap-6 lg:my-12 my-5">
+                        <a href='https://twitter.com/Collieinu_token' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50"><img src={p_1} alt="" className='w-72 shadow-xl rounded-md' /></a>
+                        <a href='https://twitter.com/DogecoinRide' data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50"><img src={p_2} alt="" className='w-72 shadow-xl rounded-md' /></a>
+                        <a href='http://twitter.com/teh_bag' data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50"><img src={p_3} alt="" className='w-72 shadow-xl rounded-md' /></a>
                     </div>
                 </div>
 
@@ -358,7 +399,7 @@ export default function Home() {
 
 
             <Footer />
-        </div>
+        </div >
 
     )
 }
