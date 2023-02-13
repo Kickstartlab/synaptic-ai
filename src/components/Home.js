@@ -41,20 +41,19 @@ export default function Home() {
 
     const accordionData = [
         {
-            title: 'How to use AI bot?',
-            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-            laborum cupiditate possimus labore, hic temporibus velit dicta earum
-            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-            voluptatem.`
+            title: 'How to use Lawyer AI bot ? ',
+            content: `
+            Well its really simple to use Lawyer Ai bot you just need to go to our telegram group where our bot is already added or use our bot 🤖 in your telegram chat box - @LawyerAi_bot 
+            
+            If you have any questions use /query and add your questions like -  /query what if i don’t pay taxes 
+            
+            Or you can use this /advice like this - /advice what if i don’t pay taxes
+            
+            Lawyer AI 🤖 will try to give the best answers`
         },
         {
-            title: 'How to become a part of it?',
-            content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
-            reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
-            quaerat iure quos dolorum accusantium ducimus in illum vero commodi
-            pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
-            quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-            Repudiandae, mollitia id reprehenderit a ab odit!`
+            title: 'Where i can buy Lawyer Ai token?',
+            content: `You can buy it from Uniswap or dexview you just need to paste our Contact address there and you can able to buy that,Taxes are 5% so you have to put that and you should have Ethereum in  ERC20 network`
         }
     ];
 
@@ -217,7 +216,7 @@ export default function Home() {
 
                 {/* roadmap */}
 
-                <div className='lg:py-20 pt-6'>
+                <div id='roadmap' className='lg:py-20 pt-6'>
                     <h3 data-aos="fade-up" className="text-blue-100 md:text-5xl text-2xl font-semibold text-center font-spartan">
                         Q1 2023 Road Map for<br></br> Lawyer AI
                     </h3>
