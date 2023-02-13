@@ -51,19 +51,22 @@ export default function Menu() {
           </div>
         </div>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/" className="text-lg ml-4 text-blue-100 font-semibold">Prices</a>
+          <a href="https://t.me/LawyerAi_bot" className="text-lg ml-4 text-blue-100 font-semibold">Lawyer Ai bot</a>
+        </button>
+        <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md transition duration-500 cursor-pointer hover:bg-zinc-700 text-white">
+          <a href="#roadmap" className="text-lg ml-4 text-blue-100 font-semibold">Roadmap</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/about" className="text-lg ml-4 text-blue-100 font-semibold">Whitepaper</a>
+          <a href="#tokenomics" className="text-lg ml-4 text-blue-100 font-semibold">Tokenomics</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer hover:bg-zinc-700 text-white">
-          <a href="/destination" className="text-lg ml-4 text-blue-100 font-semibold">Charts</a>
+          <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce" className="text-lg ml-4 text-blue-100 font-semibold">Charts</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/contact" className="text-lg ml-4 text-blue-100 font-semibold">Resources</a>
+          <a href="https://etherscan.io/address/0x3ce38bc4df7112e3944d724572e42b0cb805ad2a" className="text-lg ml-4 text-blue-100 font-semibold">Contract</a>
         </button>
         <button onClick={() => setShow(!show)} className="py-2.5 mt-3 flex items-center rounded-md duration-300 cursor-pointer bg-zinc-700 text-white">
-          <a href="/blog" className="text-lg ml-4 text-blue-100 font-semibold">Sign In</a>
+          <a href={require("../assets/whitepaper.pdf")} download="Whitepaper" className="text-lg ml-4 text-blue-100 font-semibold">Whitepaper</a>
         </button>
       </div> : null
       }
