@@ -16,11 +16,11 @@ export default function Menu() {
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
+            <li><a href="https://t.me/LawyerAi_bot" className="text-blue-50 font-semibold">Lawyer Ai bot</a></li>
             <li><a href="#roadmap" className="text-blue-50 font-semibold">Roadmap</a></li>
             <li><a href="#tokenomics" className="text-blue-50 font-semibold">Tokenomics</a></li>
             <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce" className="text-blue-50 font-semibold">Charts</a></li>
             <li><a href="https://etherscan.io/address/0x3ce38bc4df7112e3944d724572e42b0cb805ad2a" className="text-blue-50 font-semibold">Contract</a></li>
-            <li><a href="#partners" className="text-blue-50 font-semibold">Resources</a></li>
             <li><a href={require("../assets/whitepaper.pdf")} download="Whitepaper" className="text-blue-50 font-semibold">Whitepaper</a></li>
           </ul>
         </nav>
