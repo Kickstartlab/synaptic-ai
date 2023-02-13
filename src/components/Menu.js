@@ -10,9 +10,9 @@ export default function Menu() {
 
     <header>
       <div className="lg:flex hidden items-center justify-between font-work h-20">
-      <h2 className="text-3xl font-extrabold">
-            LAWYER AI
-          </h2>
+        <a href='/' className="text-3xl font-extrabold">
+          LAWYER AI
+        </a>
 
         <nav>
           <ul className="text-md flex justify-center gap-8 items-center">
@@ -21,7 +21,8 @@ export default function Menu() {
             <li><a href="https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce" className="text-blue-50 font-semibold">Charts</a></li>
             <li><a href="https://etherscan.io/address/0x3ce38bc4df7112e3944d724572e42b0cb805ad2a" className="text-blue-50 font-semibold">Contract</a></li>
             <li><a href="#partners" className="text-blue-50 font-semibold">Resources</a></li>
-             </ul>
+            <li><a href={require("../assets/whitepaper.pdf")} download="Whitepaper" className="text-blue-50 font-semibold">Whitepaper</a></li>
+          </ul>
         </nav>
       </div>
 

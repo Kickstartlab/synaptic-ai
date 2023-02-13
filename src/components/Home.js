@@ -349,9 +349,30 @@ export default function Home() {
                     </h3>
 
                     <div className="flex justify-between items-center gap-6 lg:my-12 my-5">
-                        <a href='https://twitter.com/Collieinu_token' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50"><img src={p_1} alt="" className='w-72 shadow-xl rounded-md' /></a>
-                        <a href='https://twitter.com/DogecoinRide' data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50"><img src={p_2} alt="" className='w-72 shadow-xl rounded-md' /></a>
-                        <a href='http://twitter.com/teh_bag' data-aos="flip-left" data-aos-duration="3000" data-aos-delay="50"><img src={p_3} alt="" className='w-72 shadow-xl rounded-md' /></a>
+                        <div className='p-3 bg-seagreen-50 rounded-md'>
+                            <a href='https://twitter.com/Collieinu_token' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50" className=''>
+                                <img src={p_1} alt="" className='w-72 shadow-xl rounded-md' />
+                            </a>
+
+                            <p className='text-xl font-spartan pt-5 text-center'>collie inu - twitter</p>
+                        </div>
+
+                        <div className='p-3 bg-seagreen-50 rounded-md'>
+                            <a href='https://twitter.com/DogecoinRide' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50" className=''>
+                                <img src={p_2} alt="" className='w-72 shadow-xl rounded-md' />
+                            </a>
+
+                            <p className='text-xl font-spartan pt-5 text-center'>doge coin ride - twitter</p>
+                        </div>
+
+                        <div className='p-3 bg-seagreen-50 rounded-md'>
+                            <a href='http://twitter.com/teh_bag' data-aos="flip-right" data-aos-duration="3000" data-aos-delay="50" className=''>
+                                <img src={p_3} alt="" className='w-72 shadow-xl rounded-md' />
+                            </a>
+
+                            <p className='text-xl font-spartan pt-5 text-center'>Teh bag - twitter</p>
+                        </div>
+
                     </div>
                 </div>
 
