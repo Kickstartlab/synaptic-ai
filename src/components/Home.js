@@ -178,12 +178,12 @@ export default function Home() {
                     </div>
                     <div data-aos="flip-up" data-aos-duration="3000" data-aos-delay="50" data-aos-once="false" className="bg-white-100 lg:w-52 border-4 border-seagreen-100 rounded-xl p-5 flex flex-col group hover:bg-blue-50 h-48">
                         <h4 className="text-xl text-blue-100 font-bold text-left group-hover:text-white-100">
-                            5% SELL TAX
+                            5% BUY TAX
                         </h4>
 
-                        <p className='text-gray-100 font-work opacity-40 group-hover:text-white-100 text-sm pt-3'>
+                        {/* <p className='text-gray-100 font-work opacity-40 group-hover:text-white-100 text-sm pt-3'>
                             Total Supply: 1,000,000,000
-                        </p>
+                        </p> */}
 
                         <a href='https://app.uniswap.org/' className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
                             Buy Now
@@ -197,10 +197,10 @@ export default function Home() {
                         <h4 className="text-xl text-blue-100 font-bold text-left group-hover:text-white-100">
                             5% SELL TAX
                         </h4>
-
+{/* 
                         <p className='text-gray-100 font-work opacity-40 group-hover:text-white-100 text-sm pt-3'>
                             Total Supply: 1,000,000,000
-                        </p>
+                        </p> */}
 
                         <a href='https://www.dextools.io/app/en/ether/pair-explorer/0xa7214ef7b12eb7445a78fd5e31ed0dd7120f4dce' className='flex gap-2 items-center text-blue-50 font-work pt-5 group-hover:text-white-100'>
                             Chart
