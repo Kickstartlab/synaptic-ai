@@ -356,7 +356,7 @@ export default function Home() {
                                 <img src={p_1} alt="" className='w-72 shadow-xl rounded-md' />
                             </a>
 
-                            <p className='text-xl font-spartan pt-5 text-center'>collie inu - twitter</p>
+                            <p className='lg:text-xl font-spartan pt-5 text-center'>collie inu - twitter</p>
                         </div>
 
                         <div className='p-3 bg-seagreen-50 rounded-md'>
@@ -364,7 +364,7 @@ export default function Home() {
                                 <img src={p_2} alt="" className='w-72 shadow-xl rounded-md' />
                             </a>
 
-                            <p className='text-xl font-spartan pt-5 text-center'>doge coin ride - twitter</p>
+                            <p className='lg:text-xl font-spartan pt-5 text-center'>doge coin ride - twitter</p>
                         </div>
 
                         <div className='p-3 bg-seagreen-50 rounded-md'>
@@ -372,7 +372,7 @@ export default function Home() {
                                 <img src={p_3} alt="" className='w-72 shadow-xl rounded-md' />
                             </a>
 
-                            <p className='text-xl font-spartan pt-5 text-center'>Teh bag - twitter</p>
+                            <p className='lg:text-xl font-spartan pt-5 text-center'>Teh bag - twitter</p>
                         </div>
 
                     </div>
