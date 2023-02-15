@@ -115,7 +115,7 @@ export default function Home() {
                     <div className="lg:flex items-center justify-between">
                         <div data-aos="fade-right" className=" lg:w-1/2">
                             <h2 className="text-blue-100 md:text-6xl text-2xl font-semibold leading-10 tracking-wide font-spartan">
-                                WHAT<br></br> MAKES US DIFFERENT?
+                                WHAT<br></br> MAKES US<br></br> DIFFERENT?
                             </h2>
 
                         </div>
