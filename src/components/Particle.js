@@ -19,19 +19,19 @@ function Particle() {
 
                 options={{
                     "fullScreen": {
-                        "enable": false,
+                        "enable": true,
                         "zIndex": 1
                     },
                     "particles": {
                         "number": {
-                            "value": 15,
+                            "value": 75,
                             "density": {
                                 "enable": false,
-                                "value_area": 800
+                                "value_area": 1200
                             }
                         },
                         "color": {
-                            "value": "#090D99"
+                            "value": ["#f511ff","#15d4df","#549de8","#a259f3"]
                         },
                         "shape": {
                             "type": "circle",
@@ -43,14 +43,14 @@ function Particle() {
                             "value": 0.8,
                             "random": false,
                             "anim": {
-                                "enable": false,
+                                "enable": true,
                                 "speed": 1,
                                 "opacity_min": 0.1,
                                 "sync": false
                             }
                         },
                         "size": {
-                            "value": 4,
+                            "value": 3,
                             "random": false,
                             "anim": {
                                 "enable": false,
@@ -70,10 +70,10 @@ function Particle() {
                             }
                         },
                         "line_linked": {
-                            "enable": false,
-                            "distance": 600,
-                            "color": "#03E6B6",
-                            "opacity": 0.4,
+                            "enable": true,
+                            "distance": 100,
+                            "color": "#f511ff",
+                            "opacity": 0.5,
                             "width": 2
                         },
                         "move": {
@@ -84,7 +84,7 @@ function Particle() {
                             "straight": false,
                             "out_mode": "out",
                             "attract": {
-                                "enable": false,
+                                "enable": true,
                                 "rotateX": 600,
                                 "rotateY": 1200
                             }
@@ -129,7 +129,7 @@ function Particle() {
                     },
                     "retina_detect": true,
                     "background": {
-                        "color": "",
+                        "color": "#1A1A1B",
                         "image": "",
                         "position": "50% 50%",
                         "repeat": "no-repeat",

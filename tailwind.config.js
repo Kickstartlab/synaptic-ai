@@ -6,7 +6,7 @@ module.exports = {
     colors: {
       seagreen: {
         "50": "#EBF5FF",
-        "100": "#CDE4F9",
+        "100": "#19d0e0",
       },
       blue: {
         "50": "#2128BD",
@@ -17,7 +17,7 @@ module.exports = {
         "50": "#f5f5f5"
       },
       purple: {
-        "50": "#9EC5FF",
+        "50": "#3776c2",
         "100": "#4F86FF",
       },
        pink: {
