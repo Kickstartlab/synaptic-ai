@@ -26,12 +26,12 @@ function Particle() {
                         "number": {
                             "value": 75,
                             "density": {
-                                "enable": false,
+                                "enable": true,
                                 "value_area": 1200
                             }
                         },
                         "color": {
-                            "value": ["#f511ff","#15d4df","#549de8","#a259f3"]
+                            "value": ["#f511ff", "#15d4df", "#549de8", "#a259f3"]
                         },
                         "shape": {
                             "type": "circle",
@@ -53,7 +53,7 @@ function Particle() {
                             "value": 3,
                             "random": false,
                             "anim": {
-                                "enable": false,
+                                "enable": true,
                                 "speed": 20,
                                 "size_min": 0.1,
                                 "sync": false

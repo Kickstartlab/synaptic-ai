@@ -11,14 +11,12 @@ export default function Home() {
         Aos.init({
             duration: 3000,
             once: true,
-            delay: 50,
         });
         Aos.refresh();
     }, [])
 
     return (
         <div className="overflow-hidden bg-gray-100 relative z-20 text-white-100 font-spartan">
-
 
             {/* menu */}
             <div className=' opacity-1'>
@@ -39,8 +37,7 @@ export default function Home() {
             <div className='container mx-auto lg:px-20 px-5'>
                 <Particle />
 
-
-                <div className='flex flex-col items-center justify-center  lg:py-20 py-8'>
+                <div className='flex flex-col items-center justify-center lg:py-20 py-8'>
 
                     <div className='grid md:grid-cols-2 grid-cols-1 md:grid-row-2 grid-rows-1 gap-6 items-center justify-center text-center'>
 
