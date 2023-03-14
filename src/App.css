@@ -21,7 +21,7 @@
 }
 
 .bg-btn-2 {
-  background: linear-gradient(0deg,  rgba(245,17,255,1.00) 0.59%, rgba(136, 111, 134, 0.059) 100%);
+  background: linear-gradient(0deg, rgba(245,17,255,1.00) 0.59%, rgba(136, 111, 134, 0.059) 100%);
   border-radius: 5px;
   box-shadow: rgb(255, 255, 255) 0px 3px 8px;
 }
