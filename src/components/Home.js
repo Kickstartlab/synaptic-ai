@@ -89,7 +89,7 @@ export default function Home() {
                         <img src={logo} alt='logo' className='w-32 flex mx-auto' />
 
                         <p className='text-center pb-5'>
-                            Calculate your $NEWMOON depending on staked amount and your lock time.
+                            Calculate your $SnypaticAi depending on staked amount and your lock time.
                         </p>
 
                         <div className="py-4 px-5 bg-btn-2 flex items-center justify-between rounded-md">
@@ -107,15 +107,15 @@ export default function Home() {
 
                             <hr className='line flex mx-auto mb-8'></hr>
 
-                            <div className="flex items-center justify-between rounded-md gap-2">
+                            <div className="flex items-center justify-center gap-x-6 rounded-md gap-2">
  
-                                <button className="btn-shadow xl:px-8 px-2 py-2 text-center">7 Days</button>
+                                {/* <button className="btn-shadow xl:px-8 px-2 py-2 text-center">7 Days</button>
 
-                                <button className="btn-shadow xl:px-8 px-2 py-2 text-center">14 Days</button>
-
-                                <button className="btn-shadow xl:px-8 px-2 py-2 text-center">21 Days</button>
+                                <button className="btn-shadow xl:px-8 px-2 py-2 text-center">14 Days</button> */}
 
                                 <button className="btn-shadow xl:px-8 px-2 py-2 text-center">30 Days</button>
+
+                                <button className="btn-shadow xl:px-8 px-2 py-2 text-center">50 Days</button>
 
                                 <button className="btn-shadow xl:px-8 px-2 py-2 text-center">60 Days</button>
 
@@ -128,7 +128,7 @@ export default function Home() {
                             <div className="py-4 px-5 bg-btn-2 flex items-center justify-between rounded-md">
                                 <input type="email" placeholder="0" readOnly id="email" className="bg-transparent focus:ring-0 focus:outline-none placeholder:text-white-100" />
                                 <button className="text-white-100">
-                                    $NEWMOON</button>
+                                $SnypaticAi</button>
                             </div>
 
                             <button className="btn-shadow px-8 py-2 text-center w-44 flex mx-auto items-center justify-center mt-12">60 Days</button>
