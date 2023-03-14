@@ -11,11 +11,11 @@
 }
 
 .opacity-1 {
-  background: rgb(255 255 255 / 17%);
+  background: rgba(55, 53, 53, 0.17);
 }
 
 .bg-btn-1 {
-  background: rgb(255 255 255 / 30%);
+  background: rgba(44, 43, 43, 0.3);
   border-radius: 5px;
   box-shadow: rgb(255, 255, 255) 0px 3px 8px;
 }
