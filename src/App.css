@@ -21,7 +21,7 @@
 }
 
 .bg-btn-2 {
-  background: linear-gradient(0deg, rgba(55, 124, 209, 1.00) 0.59%, rgba(136, 111, 134, 0.059) 100%);
+  background: linear-gradient(0deg,  rgba(245,17,255,1.00) 0.59%, rgba(136, 111, 134, 0.059) 100%);
   border-radius: 5px;
   box-shadow: rgb(255, 255, 255) 0px 3px 8px;
 }
@@ -31,9 +31,9 @@
 }
 
 .btn-shadow {
-  background: linear-gradient(0deg, rgba(73, 54, 72, 0.059) 0.59%, rgb(13, 100, 206) 100%);
+  background: linear-gradient(0deg, rgba(9, 9, 9, 0.059) 0.89%,  rgba(245,17,255,1.00) 100%);
   border-radius: 3px;
-  box-shadow: rgb(166, 199, 239) 0px 0px 20px;
+  box-shadow:  rgb(231, 157, 235) 0px 0px 20px;
 
 }
 

@@ -524,6 +524,9 @@ video {
 .gap-2{
   gap: 0.5rem;
 }
+.gap-x-6{
+  column-gap: 1.5rem;
+}
 .gap-x-2{
   column-gap: 0.5rem;
 }
